@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     
-    <title>2022/08/24 01:14:30 - Runstant</title>
+    <title>Forked: 2022/08/24 01:14:30 - Runstant</title>
     <meta name="description" content="思いたったらすぐ開発. プログラミングに革命を..." />
     
     <style>*, *:before, *:after {
@@ -32,8 +32,6 @@ phina.globalize();
 
 var ASSETS = {
   image: {
-    base: 'https://raw.githubusercontent.com/toburau/emography/main/image/base.png',
-    face: 'https://raw.githubusercontent.com/toburau/emography/main/image/face.png',
     tomapiko: 'http://cdn.rawgit.com/phi-jp/phina.js/v0.2.0/assets/images/tomapiko_ss.png',
   },
 };
@@ -51,7 +49,6 @@ phina.define("MainScene", {
     // 背景色
     this.backgroundColor = 'black';
     // 以下にコードを書いていく
-    Sprite('base').addChildTo(this).setPosition(100,100);
     Sprite('tomapiko').addChildTo(this).setPosition(100,100);
   },
   // 毎フレーム更新処理
